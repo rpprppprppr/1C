@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f3edc779-c387-4c81-bbe7-9eb13a7a60ed">
+  <producedTypes>
+    <objectType typeId="00701ba0-d7bc-4aa2-a4b9-4cdcf5a21bd9" valueTypeId="6f787e7f-756f-44b7-b86c-613754106f2d"/>
+    <refType typeId="b150998b-e68d-41c0-95f4-4cb2edd6a622" valueTypeId="c38d904c-e3a3-4708-a007-2fd7f14033f0"/>
+    <selectionType typeId="9acb59a4-18a3-4bcb-afa6-0f521c6ff675" valueTypeId="196ddc36-0270-4a6e-ad5e-69c06d4289d6"/>
+    <listType typeId="65de5e8f-1a11-4103-be6f-3dc11ce89710" valueTypeId="fc5b7e7c-2d9b-49bc-a4f8-b48e29e15442"/>
+    <managerType typeId="551f45e6-d5bd-4eca-8e50-c3f898b616b8" valueTypeId="aee4e6e0-3989-4a95-afc0-98c215fb20ad"/>
+  </producedTypes>
+  <name>ШкалаБонуснойПрограммы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шкала бонусной программы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ШкалаБонуснойПрограммы.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>InformationRegister.АктуальнаяШкалаБонуснойПрограммы</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <tabularSections uuid="d0ec442c-9abe-449b-a886-76c577d336e9">
+    <producedTypes>
+      <objectType typeId="69a4776a-f6bd-4d04-a023-222310d78966" valueTypeId="58b512ca-76e4-46c7-91d3-5f622d37845a"/>
+      <rowType typeId="08841a7f-89a9-4288-9c88-2b18080a058a" valueTypeId="b2e57e5e-2147-4b8c-aa5b-c68c2d2a8861"/>
+    </producedTypes>
+    <name>Диапазоны</name>
+    <synonym>
+      <key>ru</key>
+      <value>Диапазоны</value>
+    </synonym>
+    <attributes uuid="ef71fe5c-db97-4def-b13b-8d0fe05d9ba0">
+      <name>НижняяГраница</name>
+      <synonym>
+        <key>ru</key>
+        <value>Нижняя граница</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="977b9ca7-9a0e-4b7a-bcc6-64b9e66e366c">
+      <name>ВерхняяГраница</name>
+      <synonym>
+        <key>ru</key>
+        <value>Верхняя граница</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ff976806-997e-4dd9-add2-773350f79d2f">
+      <name>ПроцентНакопления</name>
+      <synonym>
+        <key>ru</key>
+        <value>Процент накопления</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
