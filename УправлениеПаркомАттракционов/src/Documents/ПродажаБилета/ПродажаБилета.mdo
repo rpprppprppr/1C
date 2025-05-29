@@ -28,6 +28,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ПродажаБилета.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ПродажаБилета.Form.ФормаСписка</defaultListForm>
   <registerRecords>AccumulationRegister.АктивныеПосещения</registerRecords>
   <registerRecords>AccumulationRegister.Продажи</registerRecords>
   <registerRecords>AccumulationRegister.БонусныеБаллыКлиентов</registerRecords>
@@ -55,17 +56,16 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="0842b007-c5f7-49dc-aba9-acd1d973549b">
-    <name>Номенклатура</name>
+    <name>УдалитьНоменклатура</name>
     <synonym>
       <key>ru</key>
-      <value>Номенклатура</value>
+      <value>Удалить номенклатура</value>
     </synonym>
     <type>
       <types>CatalogRef.Номенклатура</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <choiceParameters>
       <name>Отбор.ВидНоменклатуры</name>
       <value xsi:type="core:ReferenceValue">
@@ -111,10 +111,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="bd97f8c7-374b-41d4-bc9d-0bc6866961ff">
-    <name>Цена</name>
+    <name>УдалитьЦена</name>
     <synonym>
       <key>ru</key>
-      <value>Цена</value>
+      <value>Удалить цена</value>
     </synonym>
     <type>
       <types>Number</types>
@@ -139,6 +139,107 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="d2a63c61-ff44-4427-ae6a-6ceb02a99854">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="a7d0f40d-59a4-41d8-a588-d0413c189688">
+    <producedTypes>
+      <objectType typeId="f30d54fd-6acc-4b69-b896-1bb70ce1ff96" valueTypeId="e666832f-bdfc-4b64-a90d-455f38e4b070"/>
+      <rowType typeId="ffd66663-a344-4b59-9f8e-c1cc825b1642" valueTypeId="1f922ff7-a12e-4095-be5e-cbaaee5b9678"/>
+    </producedTypes>
+    <name>ПозицииПродажи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Позиции продажи</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <attributes uuid="8b0c4c15-9d22-4e90-b542-79cee7b28b6d">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameters>
+        <name>Отбор.ВидНоменклатуры</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.ВидНоменклатуры.EnumValue.ПосещениеАттракционов</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3f79a696-fc3c-46a3-a9fa-57ec95b94906">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5b8ba4ca-483c-4f05-b624-1fe70783a89f">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="46ad4038-344a-427d-ac46-a975877d413a">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
   <templates uuid="8344ed59-33cc-433a-bdf8-4925798011b9">
     <name>Билет</name>
   </templates>
