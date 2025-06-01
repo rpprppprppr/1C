@@ -1517,6 +1517,14 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Номенклатура</dataPath>
         <field>Номенклатура</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Список номенклатуры номенклатура</value>
+            </content>
+          </localValue>
+        </title>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ЭтоГруппа</dataPath>
