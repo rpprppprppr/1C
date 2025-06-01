@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6057e035-ce49-4b77-82ab-e364f9dc5450">
+  <producedTypes>
+    <refType typeId="745e43ac-46f7-444f-99f7-b967a20b198d" valueTypeId="4cc7e4ef-9c77-45d4-a701-a0289678d264"/>
+    <listType typeId="7186737b-a116-4878-821d-ab6b43bf69d0" valueTypeId="e9a0313b-a03a-441a-8d02-c13bfd816891"/>
+    <managerType typeId="8ef7c539-62d0-4987-9c81-5ec8ddc9d4e0" valueTypeId="0edc1c61-1afc-4362-b8f4-aab1394d5a26"/>
+  </producedTypes>
+  <name>РолиПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роли пользователей</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="8e7ddf5a-6824-456d-9600-1e981e66cdec">
+    <name>Админ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Админ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e45ab29c-6511-4116-8d1b-36d4fc64af53">
+    <name>Кассир</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кассир</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f425e12b-cada-4967-b683-a953bcd9096b">
+    <name>ОператорАттракциона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оператор аттракциона</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
