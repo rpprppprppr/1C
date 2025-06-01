@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="09fa9b19-b841-4f53-bdd5-512d98d97bbb">
+  <name>Администрирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Пользователи</content>
+  <content>DataProcessor.ПереходНаНовыеВерсии</content>
+  <content>Enum.РолиПользователей</content>
+  <content>Role.ПолныеПрава</content>
+  <content>SessionParameter.ТекущийПользователь</content>
+  <content>CommonModule.Пользователи</content>
+</mdclass:Subsystem>
